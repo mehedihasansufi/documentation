@@ -94,6 +94,22 @@ git commit --amend -m "new correct commit message"
 2. ফাইল চেঞ্জ করে -> `git add .` (ফাইল আপডেট করলেন)
 3. `git commit --amend -m "new message"` (আগের কমিটের সাথেই নতুন ফাইল ও মেসেজ একসাথে সেভ হয়ে গেল)
 ```
+### After Push Some Code in Github Modify Last Commit `--amend`
+
+> আমি ভুল করে কিছু file `git add` না করেই GitHub-এ push করে দিয়েছি। এখন বাদ পড়া fileগুলো এবং নতুন code—সবকিছু আগের **একই commit-এর মধ্যে** রাখতে চাই।
+
+```md
+1. `git commit -m "first"` (প্রথমে commit করলাম)
+
+2. ফাইল চেঞ্জ করে → `git add .` (নতুন ও বাদ পড়া fileগুলো stage করলাম)
+
+3. `git commit --amend -m "new message"` (আগের commit-এর সাথে নতুন file ও code যোগ করে commit message-ও update করলাম)
+
+4. `git push origin main` (GitHub-এ push করলাম)
+
+5. যদি `non-fast-forward` error আসে → `git push origin main --force` (amend করা commit-টি GitHub-এ update করলাম)
+```
+
 ### Toggle Previous Branch
 - **Description:** আপনাকে হুবহু আগের ব্র্যাঞ্চে (Previous Branch) ফিরিয়ে নিয়ে যায় (ঠিক কম্পিউটারের `Alt + Tab` এর মতো কাজ করে)। বারবার বড় ব্র্যাঞ্চের নাম টাইপ করার ঝামেলা এড়াতে এটি দারুণ একটি শর্টকাট।
 ```md
