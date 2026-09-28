@@ -1,5 +1,4 @@
 ## Git & Github
-
 ### git flow 
 
 **Working directory -- Stagging area -- local repo -- remote**
@@ -26,6 +25,11 @@ HEAD →→ Point →→ Specific Commit
 
 git config --global user.name "Mehedi Hasan"
 git config --global user.email demo@gmail.com
+```
+
+## For credential set up (for the connection local to remote for local specefic folder)
+```md
+git config --local credential.useHttpPath true
 ```
 
 ### Working Flow

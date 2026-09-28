@@ -1,1 +1,5 @@
 1. [Computer Architecture](./Computer_Architecture/readme.md)
+2. [Operating System](./Operating_system/operating_system.md)
+3. [apna college docker](./dockerApnaCollege.md)
+4. [Docker fundamentals](./docker_full/fundamentals.md)
+5. [Docker](./docker_full/docker.md)
